@@ -1,0 +1,58 @@
+.text {
+    color: #e7c9a9;
+    font-size: .99rem;
+}
+  
+.state > .text, .moveDetails > .text { 
+    text-align: center;
+}
+
+.green {
+    background-color: #008000;
+    color: #008000;
+}
+
+.red {
+    background-color: #ff0000;
+    color: #ff0000;
+}
+
+.black {
+    background-color: #191919;
+    color: #191919;
+}
+
+.pink {
+    background-color: #ffc0cb;
+    color: #ffc0cb;
+}
+
+.orange {
+    background-color: #ffa500;
+    color: #ffa500;
+}
+
+.white {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.yellow {
+    background-color: #ffff00;
+    color: #ffff00;
+}
+
+.blue {
+    background-color: #0000ff;
+    color: #0000ff;
+}
+
+.gray {
+    background-color: #696969;
+    color: #696969;
+}
+
+.purple {
+    background-color: #800080;
+    color: #800080;
+}
