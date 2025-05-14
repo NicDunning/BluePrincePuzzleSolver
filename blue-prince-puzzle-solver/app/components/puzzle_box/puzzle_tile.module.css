@@ -1,0 +1,145 @@
+
+.gridItem {
+    justify-content: center;
+    align-items: center;
+}
+
+.smallGrid {
+    width: 2rem;
+    height: 2rem;
+}
+
+.mediumGrid {
+    width: 4rem;
+    height: 4rem;
+}
+  
+.largeGrid {
+    width: 8rem;
+    height: 8rem;
+}
+
+.gridItemBorder {
+    padding: .3rem;
+    background-color: #322d2b;
+}
+
+.green {
+    background-color: #008000;
+    color: #008000;
+}
+  
+.green:hover {
+    background-color: #006c00;
+    color: #006c00;
+}
+
+.red {
+    background-color: #ff0000;
+    color: #ff0000;
+}
+
+.red:hover {
+    background-color: #b90101;
+    color: #b90101;
+}
+
+.black {
+    background-color: #191919;
+    color: #191919;
+}
+
+.black:hover {
+    background-color: #000000;
+    color: #000000;
+}
+
+.pink {
+    background-color: #ffc0cb;
+    color: #ffc0cb;
+}
+
+.pink:hover {
+    background-color: #d19ea7;
+    color: #d19ea7;
+}
+
+.orange {
+    background-color: #ffa500;
+    color: #ffa500;
+}
+
+.orange:hover {
+    background-color: #ca8300;
+    color: #ca8300;
+}
+
+.white {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.white:hover {
+    background-color: #e4e4e4;
+    color: #e4e4e4;
+}
+
+.yellow {
+    background-color: #ffff00;
+    color: #ffff00;
+}
+
+.yellow:hover {
+    background-color: #d2d200;
+    color: #d2d200;
+}
+
+.blue {
+    background-color: #0000ff;
+    color: #0000ff;
+}
+
+.blue:hover {
+    background-color: #0000df;
+    color: #0000df;
+}
+
+.gray {
+    background-color: #696969;
+    color: #696969;
+}
+
+.gray:hover {
+    background-color: #484848;
+    color: #484848;
+}
+
+.purple {
+    background-color: #800080;
+    color: #800080;
+}
+
+.purple:hover {
+    background-color: #550055;
+    color: #550055;
+}
+
+.top_left {
+    clip-path: polygon(25% 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 25%);
+}
+
+.top_right {
+    clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 0);
+}
+
+.bottom_left {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 25% 100%, 0 75%, 0 0);
+}
+
+.bottom_right {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 75%, 75% 100%, 0 100%, 0 100%, 0 0);
+}
+
+.top_left {
+    border-radius: 0;
+}
