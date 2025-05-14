@@ -2,10 +2,6 @@
 import styles from "./puzzle_tile.module.css";
 import React, { useState } from 'react';
 
-function tileClick(log) {
-    console.log(log)
-}
-
 export default function PuzzleTile(params) {
 
     const corner = [
@@ -45,7 +41,7 @@ export default function PuzzleTile(params) {
 
     return (
         <div className={`${styles.gridItemBorder} ${corner[idx]}`} key={`interactive-${idx}`}>
-            <div className={`${styles.gridItem} ${color_rules[c.color].style_color} ${corner[idx]} ${sizes[size]}`} onClick={tileClick(c.color)} key={`interactive-button-${idx}`}></div>
+            <div className={`${styles.gridItem} ${color_rules[c.color].style_color} ${corner[idx]} ${sizes[size]}`} onClick={() => {params.pressed(true)}} key={`interactive-button-${idx}`}></div>
         </div>
     )
 }

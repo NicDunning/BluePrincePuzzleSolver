@@ -1,22 +1,26 @@
 'use client';
 import PuzzleTile from "./components/puzzle_box/puzzle_tile";
 import RulesBox from "./components/rules_box/rules";
+import Popup from "./components/color_pick_popup/color_pick"
 import styles from "./page.module.css";
 import React, { useState } from 'react';
+import Grid from "./components/puzzle_box/puzzle_grid";
 
 export default function Home() {
 
   const [grid, setGrid] = useState([
-    {color: 0, active: false},
-    {color: 1, active: false},
-    {color: 2, active: false},
-    {color: 3, active: false},
-    {color: 4, active: false},
-    {color: 5, active: false},
-    {color: 6, active: false},
-    {color: 7, active: false},
-    {color: 8, active: false},
+    {color: 0},
+    {color: 1},
+    {color: 2},
+    {color: 3},
+    {color: 4},
+    {color: 5},
+    {color: 6},
+    {color: 7},
+    {color: 8},
   ])
+
+  const [isColorPopupOpen, setColorPopupIsOpen] = useState(false)
 
   return (
     <div className={styles.main}>
@@ -33,18 +37,7 @@ export default function Home() {
         <RulesBox/>
       </div>
       <div className={styles.actionSequence}>
-        <div  className={styles.state}>
-          <p className={styles.text}>Initial State</p>
-          <div className={styles.start}>
-            {
-              grid.map((c, idx)=>{
-                return (
-                  <PuzzleTile key={`initialState${idx}`} c={c} idx={idx} size={'sm'}/>
-                )
-              })
-            }
-          </div>
-        </div>
+        <Grid header={'Initial State'}/>
         <div className={styles.moves}>
           <button>{'<'}</button>
           <div className={styles.move}>
@@ -60,18 +53,7 @@ export default function Home() {
           </div>
           <button>{'>'}</button>
         </div>
-        <div className={styles.state}>
-          <p className={styles.text}>Solved State</p>
-          <div className={styles.end}>
-            {
-              grid.map((c, idx)=>{
-                return (
-                  <PuzzleTile key={`solvedState${idx}`} c={c} idx={idx} size={'sm'}/>
-                )
-              })
-            }
-          </div>
-        </div>
+        <Grid header={'Solved State'}/>
       </div>
     </div>
   );
