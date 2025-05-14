@@ -1,0 +1,25 @@
+.end, .start {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+    margin: 2%;
+    gap: 5px;
+    background-color: #403834;
+    border: 5px solid #322d2b;
+    padding-right: .75rem;
+}
+  
+.state {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+.endGridItem, .startGridItem{
+    width: 30px;
+    height: 30px;
+}
+  
+.text {
+    text-align: center;
+}
